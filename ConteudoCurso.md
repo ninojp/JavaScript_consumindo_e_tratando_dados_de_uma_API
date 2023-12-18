@@ -14,4 +14,47 @@ Nesta aula, o instrutor apresentou o projeto "VidFlow", um aplicativo de compart
 
 Nesta aula, o instrutor ensina como construir o cabeçalho de uma aplicação web a partir de um layout do Figma. O foco está na criação da barra de navegação superior, que possui a logo do VidFlow à esquerda, a barra de pesquisa no centro e os ícones à direita. O instrutor mostra passo a passo como adicionar as tags HTML necessárias e as classes correspondentes para estilizar cada elemento da barra de navegação. Ao final do trecho, a barra de pesquisa já está pronta, com a logo, o campo de pesquisa, o ícone de teclado e os botões de busca e pesquisa por voz.
 
-### Aula 01 -  - Video 4
+### Aula 01 - Ícones do cabeçalho - Video 4
+
+Nesta aula, o instrutor continua a construção da barra superior de um projeto em JavaScript, focando na criação dos ícones do canto superior direito. Ele explica passo a passo como adicionar as tags necessárias no código HTML para criar os ícones. Além disso, ele adiciona um botão de alternância. O instrutor mostra o código HTML completo para a barra superior e propõe um desafio para construir a barra lateral do projeto.
+
+### Aula 01 - Criando seção de categoria - Video 5
+
+Nesta aula, o instrutor continua a transformação do layout em código, focando na criação da barra de categorias do VidFlow. Ele explica passo a passo como criar essa barra, utilizando tags HTML e classes CSS. A barra de categorias consiste em uma div que contém uma série de links representando cada categoria. O instrutor demonstra como adicionar os links e preencher os nomes das categorias. Além disso, ele mostra como adicionar uma seta apontada para a direita no canto superior direito da barra. Ao final, ele ressalta que os vídeos serão buscados de uma API externa e que isso será abordado na próxima aula.
+
+### Aula 01 Conclusão - Nessa aula, você aprendeu como:
+
+Organizar os arquivos e pastas do projeto;
+Transformar o layout do Figma em código;
+Construir o cabeçalho, barra lateral e seção de categorias do VidFlow.
+
+## Aula 02 - Consumindo API
+
+### Aula 02 - Preparando o ambiente: instalação do JSON
+
+Passo 1: Preparação - Instale o Node.js
+Antes de começar, é importante ter o Node.js instalado em seu sistema.  
+
+Passo 2: Instalação do JSON Server
+Agora que você possui o Node.js, podemos prosseguir com a instalação do JSON Server. Vamos lá!
+
+- Abra seu terminal ou prompt de comando;
+
+- Para instalar o JSON Server globalmente, você só precisa digitar o seguinte comando e pressionar "Enter":
+
+> npm install -g json-server
+
+Passo 3: Preparando o arquivo JSON
+Agora, o arquivo JSON videos.json, que está dentro da pasta backend do nosso projeto, servirá como a fonte de dados para o JSON Server. Para isso, copie o JSON a seguir e cole em videos.json:
+
+Passo 4: Inicialização do JSON Server
+Agora que você tem o JSON Server e o arquivo JSON preparados, é hora de colocá-los em funcionamento:
+
+- Abra um novo terminal ou prompt de comando;
+
+- Execute o seguinte comando para iniciar o JSON Server e usá-lo com o arquivo videos.json:
+
+>json-server --watch backend/videos.json
+
+### Aula 02 -  - Video 1
+
