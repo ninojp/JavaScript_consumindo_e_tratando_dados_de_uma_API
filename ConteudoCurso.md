@@ -54,7 +54,59 @@ Agora que você tem o JSON Server e o arquivo JSON preparados, é hora de coloc�
 
 - Execute o seguinte comando para iniciar o JSON Server e usá-lo com o arquivo videos.json:
 
->json-server --watch backend/videos.json
+>json-server --watch backend/videos.json  
+--watch: Este é um dos argumentos que você pode fornecer opcionalmente ao comando JSON Server. A opção --watch é usada para especificar que o servidor deve ficar "observando" um arquivo JSON específico para quaisquer mudanças. Isso significa que se você modificar o arquivo videos.json, o JSON Server automaticamente recarregará os dados para refletir as alterações.
 
-### Aula 02 -  - Video 1
+### Aula 02 - Instalando o JSON Server - Video 1
 
+Nesta aula, o instrutor ensina como obter os dados de vídeos para a aplicação VidFlow utilizando uma API fake chamada JSON Server. Ele explica como instalar o JSON Server, acessar a documentação e copiar o comando de instalação. Em seguida, ele mostra como simular a API colocando um objeto JavaScript no arquivo "videos.json" e executando o comando para iniciar o JSON Server. Assim, é possível visualizar os vídeos no endpoint "/videos" do JSON Server. Agora, é possível consumir esses dados como uma API e trazê-los para a aplicação.
+
+### Aula 02 - Buscando dados na API - Video 2
+
+Nesta aula, aprendemos como buscar dados de uma API utilizando JavaScript. Primeiro, adicionamos a tag <script></script> no HTML para trabalhar com JavaScript. Em seguida, utilizamos o método fetch() para buscar os dados da API. O retorno do fetch() é uma Promise, que é uma função assíncrona que promete buscar os dados e fazer algo com eles quando estiverem disponíveis. Verificamos o status da Promise e, quando estiver cumprida, utilizamos a função .then() para realizar uma ação com os dados. No exemplo, utilizamos console.log(res) para exibir a resposta da API no console do navegador. Também utilizamos res.json() para transformar a resposta em um JSON. Por fim, mostramos no console do navegador o retorno da Promise, que são os dados da API.
+
+### Aula 02 - Exibindo os vídeos na aplicação - Video 3
+
+Nesta aula, aprendemos como consumir dados de uma API e exibi-los em uma aplicação. Utilizamos a função fetch para fazer a requisição à API e a função then para tratar a resposta. Em seguida, utilizamos o método json() para transformar a resposta em um objeto JSON. Com um loop forEach, percorremos cada vídeo retornado pela API e adicionamos as informações na lista de vídeos no HTML. Criamos elementos HTML dinamicamente, como <li>, <iframe>, <div>, <img>, <h3> e <p>, para exibir os vídeos com suas respectivas informações. Ao final, os vídeos da API são exibidos no navegador.
+
+### Aula 02 - Capturando erros com .catch - Video 4
+
+Nesta aula, o instrutor discute sobre como capturar erros ao consumir dados de uma API no JavaScript. Ele mostra como utilizar o método .catch() para tratar erros ao carregar vídeos de uma API. Dentro do bloco .catch(), é possível exibir uma mensagem de erro para o usuário. O instrutor também demonstra como provocar um erro intencionalmente no código e mostra como a mensagem de erro é exibida no navegador. O objetivo é garantir que a aplicação não quebre e que os vídeos estejam sempre disponíveis.
+
+### Aula 02 - Para saber mais: Promises em JavaScript
+
+Para entender melhor as Promises, precisamos primeiro conhecer o conceito de programação assíncrona:
+
+Na programação síncrona, o código é executado linha por linha, ou seja, uma linha de código não começará a ser executada até que a linha anterior tenha sido totalmente concluída. No entanto, na programação assíncrona, o código não espera que uma linha seja concluída antes de passar para a próxima. Isso é muito útil quando estamos realizando tarefas que podem demorar algum tempo, como carregar uma imagem ou buscar dados de um servidor.
+
+As Promises em JavaScript são objetos que representam o estado de uma operação assíncrona. Uma Promise pode estar em um de três estados:  
+
+- pendente(estado inicial, nem cumprido nem rejeitado)
+- resolvida/fulfilled (a operação assíncrona foi concluída com sucesso)
+- rejeitada/rejected (a operação assíncrona falhou). Podemos criar uma Promise da seguinte forma:
+
+Depois que a Promise é retornada, podemos lidar com seu resultado utilizando o método then para o caso de sucesso (resolvida) e o método catch para o caso de erro (rejeitada):
+
+É importante lembrar que a promise só pode ser resolvida ou rejeitada uma vez. Se nós resolvermos e depois rejeitarmos uma mesma promise, a rejeição será ignorada.
+
+Além disso, pode ser um desafio lidar com várias Promises. Para isso, temos disponíveis as funções Promise.all e Promise.race:
+
+Promise.all: recebe um array de Promises e retorna uma nova promiseque resolve quando todas as Promises do array foram resolvidas ou uma delas foi rejeitada.
+
+Promise.race: retorna uma promiseque se resolve ou rejeita com a resolução ou rejeição da primeira promiseno array a se resolver.
+
+As Promises são uma parte importante do JavaScript moderno e são usadas em muitas bibliotecas e frameworks populares, como React e Angular. Ao entender como as Promises funcionam, você terá mais facilidade para lidar com código assíncrono efetivamente.
+
+Para se aprofundar mais, acesse a documentação de [Promises](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+
+### Aula 02 Conclusão - Nessa aula, você aprendeu:
+
+O que é e como instalar a API Fake JSON Server;
+Como fazer a busca dos dados na API com o Fetch;
+Como lidar com .then e com Promises;
+Como manipular o DOM para exibir os dados da API;
+Como usar o .catch para capturar erros.
+
+## Aula 03 - Aprimorando o código
+
+### Aula 03 - Async/Await - Video 1
