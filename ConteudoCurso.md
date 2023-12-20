@@ -110,3 +110,31 @@ Como usar o .catch para capturar erros.
 ## Aula 03 - Aprimorando o código
 
 ### Aula 03 - Async/Await - Video 1
+
+Nesta aula, o instrutor aborda o uso de código assíncrono em JavaScript para melhorar o desempenho de uma aplicação. Ele introduz o conceito de callback e apresenta o recurso async/await como uma forma mais organizada de lidar com código assíncrono. O instrutor mostra um exemplo de código utilizando os métodos .then() para obter a resposta de uma requisição fetch e transformá-la em um objeto JSON. Em seguida, ele substitui os métodos .then() por await, que faz com que o código aguarde a conclusão da operação anterior antes de continuar a execução. O instrutor também faz melhorias no código, como renomear variáveis e remover métodos desnecessários. No final, ele chama a função buscarEMostrarVideos para testar o código assíncrono. O uso do async/await torna o código mais linear e evita o callback hell.
+
+### Aula 03 -  Tratando erros com try…catch - Video 2
+
+Nesta aula, o instrutor aborda a necessidade de tratar erros em um código assíncrono. Ele apresenta o recurso Try/Catch, que consiste em dois blocos de código: o bloco try, responsável por executar o código que pode gerar erros, e o bloco catch, acionado caso algum erro seja capturado. O instrutor mostra como implementar o Try/Catch no código e como fazer o tratamento de erro, exibindo uma mensagem personalizada. Além disso, é apresentado o bloco finally, que é executado independentemente de haver um erro ou não. O instrutor também demonstra como criar erros personalizados usando o throw new Error(). Por fim, destaca a importância de tratar erros em um código assíncrono e como esses recursos podem ser utilizados para garantir um código mais robusto.
+
+### Aula 03 -  Para saber mais: Callback Hell
+
+Callbacks em JavaScript:  
+Em JavaScript, um callback é uma função que é passada como argumento para outra função e é executada após a conclusão de uma operação assíncrona ou evento específico. Os callbacks são amplamente utilizados para lidar com tarefas assíncronas, como chamadas de API, leitura de arquivos, eventos de usuário e muito mais.
+
+O Problema do "Callback Hell":  
+O "Callback Hell" é um termo usado para descrever a situação em que múltiplas chamadas de função com callbacks são aninhadas profundamente dentro de outras chamadas de função. Isso cria um código que se assemelha a uma pirâmide, tornando-o difícil de ler, manter e depurar. À medida que mais operações assíncronas são adicionadas, a complexidade do código aumenta rapidamente.
+
+Conclusão:  
+Embora os callbacks sejam úteis para controlar fluxos de execução assíncronos, é importante evitar o "Callback Hell" sempre que possível. Alternativas, como o uso de Async-Await, tornam o código mais legível e manutenível, especialmente em projetos maiores. Entender como lidar com callbacks de forma eficaz é fundamental para desenvolver aplicativos JavaScript robustos e de fácil manutenção. Para se aprofundar mais no assunto, recomendamos que acesse a [Introdução ao JavaScript Assíncrono](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Asynchronous/Introducing#manipuladores_de_eventos_2) e também acesse a documentação das [Funções Callback](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function).
+
+### Aula 03 Conclusão - Nessa aula, você aprendeu como:
+
+Evitar o “Callback Hell”;
+Refatorar o código assíncrono com Async/await;
+Realizar tratamento de erros com os blocos Try-Catch-Finally;
+Tratar erros personalizados com o throw new Error.
+
+## Aula 04 - 
+
+### Aula 04 -  - Video 1
