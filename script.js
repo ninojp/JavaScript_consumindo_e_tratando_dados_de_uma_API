@@ -16,6 +16,7 @@ async function buscarEMostrarVideos() {
             <img class="img-canal" src = "${video.imagem}" alt="Logo do Canal">
             <h3 class="titulo-video">${video.titulo}</h3>
             <p class="titulo-canal">${video.descricao}</p>
+            <p class="categoria" hidden>${video.categoria}</p>
             </div></li>`;
         });
     } catch(erro) {
@@ -26,3 +27,48 @@ async function buscarEMostrarVideos() {
     // }
 };
 buscarEMostrarVideos();
+
+const barraDePesquisa = document.querySelector(".pesquisar__input");
+
+barraDePesquisa.addEventListener("input", filtrarPesquisa);
+
+function filtrarPesquisa(){
+    const videos = document.querySelectorAll(".videos__item");
+    const valorFiltro = barraDePesquisa.value.toLowerCase();
+    if(barraDePesquisa.value != ""){
+        // for(let video of videos){
+        //     let titulo = video.querySelector(".titulo-video").textContent.toLowerCase();
+        //     let valorFiltro = barraDePesquisa.value.toLowerCase();
+        //     if(!titulo.includes(valorFiltro)){
+        //         video.style.display = "none";
+        //     }else{ video.style.display = "block"; }
+        // }
+        // Refatorando o código acima
+        videos.forEach(video => {
+            const titulo = video.querySelector(".titulo-video").textContent.toLowerCase();
+            video.style.display = valorFiltro ? titulo.includes(valorFiltro) ? 'block' : 'none' : 'block';
+        });
+    }else{
+        video.style.display = "block";
+    };  
+};
+
+const btnCategorias = document.querySelectorAll('.superior__item');
+
+btnCategorias.forEach((btn) => {
+    let nomeCategoria = btn.getAttribute('name');
+    btn.addEventListener('click', () => buscarPorCategoria(nomeCategoria));
+});
+
+function buscarPorCategoria(filtroNomeCategoria){
+    const videos = document.querySelectorAll(".videos__item");
+    videos.forEach((video) => {
+        let categoria =  video.querySelector(".categoria").textContent.toLowerCase();
+        let valorFiltro = filtroNomeCategoria.toLowerCase();
+        if(!categoria.includes(valorFiltro) && valorFiltro != 'tudo'){
+            video.style.display = 'none';
+        }else{
+            video.style.display = 'block';
+        }
+    })
+}

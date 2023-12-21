@@ -135,6 +135,30 @@ Refatorar o código assíncrono com Async/await;
 Realizar tratamento de erros com os blocos Try-Catch-Finally;
 Tratar erros personalizados com o throw new Error.
 
-## Aula 04 - 
+## Aula 04 - Criando filtros de Exibição
 
-### Aula 04 -  - Video 1
+### Aula 04 - Vinculando evento à barra de pesquisa - Video 1
+
+Nesta aula, o instrutor discute sobre a implementação de uma barra de pesquisa funcional em uma aplicação. Ele explica como criar a constante barraDePesquisa e adicionar um evento de escuta a ela. Além disso, ele mostra como capturar os vídeos presentes no código HTML e como adicionar uma condição para filtrar a pesquisa. O instrutor menciona que dará continuidade na criação do código no próximo vídeo.
+
+### Aula 04 - Construindo a lógica de pesquisa - Video 2
+
+Nesta aula, o instrutor explica como implementar a funcionalidade de pesquisa na barra de um aplicativo. Ele percorre todos os vídeos e compara seus títulos com o texto inserido na barra de pesquisa. Utilizando um loop for, ele captura o título de cada vídeo e converte tanto o título quanto o texto do filtro para letras minúsculas. Em seguida, ele compara os dois textos e define o estilo de exibição do vídeo com base no resultado da comparação. Caso o título do vídeo não inclua o texto do filtro, o vídeo é ocultado; caso contrário, o vídeo é exibido. Além disso, ele adiciona uma condição para exibir todos os vídeos caso a barra de pesquisa esteja vazia. O instrutor testa a funcionalidade no navegador e conclui o vídeo convidando os espectadores a continuarem assistindo para aprenderem sobre as próximas funcionalidades do aplicativo.
+
+### Aula 04 - Adicionando filtro de categorias - Video 3
+
+Nesta aula, o instrutor está implementando o filtro de categorias na VidFlow. Ele começa capturando os botões de filtro de categoria no arquivo HTML e adicionando um evento de clique para cada um deles. Quando um botão é clicado, é chamada a função filtrarPorCategoria() passando como parâmetro o nome da categoria. Dentro dessa função, o instrutor captura todos os elementos de vídeo e irá implementar a lógica para filtrar as categorias no próximo vídeo. Com isso, o conteúdo da VidFlow poderá ser filtrado de acordo com a categoria selecionada pelo usuário.
+
+### Aula 04 - Criando a lógica de filtragem - Video 4
+
+Nesta aula, o instrutor ensina como implementar um filtro de categorias em um site chamado VidFlow. Primeiro, é explicado que o filtro de pesquisa já está implementado, onde o input inserido pelo usuário é comparado com o título do vídeo. Agora, a ideia é comparar o nome do botão clicado com a categoria do vídeo proveniente de uma API. Para isso, é mostrado como criar uma tag <p> com a classe "categoria" e o atributo "hidden" para captar a categoria do vídeo da API. Em seguida, é mostrado como capturar o valor da categoria em letras minúsculas usando a função querySelector e textContent. Depois, é implementado um if para verificar se a categoria não inclui o filtro selecionado e se o filtro é diferente de "tudo". Se essa condição for verdadeira, o vídeo é escondido, caso contrário, o vídeo é exibido. O instrutor menciona que é necessário acessar o navegador para verificar se a implementação do filtro de categorias deu certo. Ao recarregar a página e clicar na categoria desejada, os vídeos são filtrados conforme a categoria selecionada. Se a categoria "Tudo" for selecionada, todos os vídeos são exibidos novamente.
+
+### Aula 04 Conclusão - Nessa aula, você aprendeu como:
+
+Implementar uma barra de pesquisa para filtrar vídeos por título;
+Refatorar o código para torná-lo mais sucinto e organizado;
+Implementar funcionalidade ao filtro de categorias.
+
+### Aula 04 Conclusão - Video 5
+
+Nesta aula, os alunos aprenderam a criar filtros de exibição na aplicação VidFlow. Foram adicionados filtros como a barra de pesquisa e os botões de categoria, permitindo que os usuários filtrem os vídeos de acordo com suas preferências. Além disso, foram utilizados métodos promises para consumir uma API e trazer os vídeos para a aplicação. O código também foi aprimorado com o uso de async await e a captura de erros foi implementada. Com essas habilidades, os alunos agora podem integrar a funcionalidade de consumir uma API em suas próprias aplicações, tornando-as mais sofisticadas e com conteúdos diferenciados.
